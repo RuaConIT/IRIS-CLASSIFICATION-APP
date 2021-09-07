@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 st.write("""
 # Phân loại hoa Iris một cách dễ dàng
 Hỗ trợ điều chỉnh qua giao diện
+* **Full source: **  [Tại đây] (https://github.com/RuaConIT/IRIS-CLASSIFICATION-APP)
 
 
 """)
