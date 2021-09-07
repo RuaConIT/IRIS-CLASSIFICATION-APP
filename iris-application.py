@@ -55,8 +55,16 @@ if option == 'HCA-KNN':
     else:
         st.write('Iris-virginica')
 
+    data = {
+        'Iris-setosa': predict_proba[0][0],
+        'Iris-versicolor': predict_proba[0][1],
+        'Iris-virginica': predict_proba[0][2],
+    }
+    features = pd.DataFrame(data, index = [0])
+
     st.subheader('Phần trăm dự đoán')
-    st.write(predict_proba)
+    st.write(features)
+    
 elif option == '-- Vui lòng chọn --':
     pass
 
